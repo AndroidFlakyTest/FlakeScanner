@@ -313,3 +313,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,sbt,code,java,linux,macos,scala,android,windows,intellij
+
+# Custom by xiao
+.idea
+.dockerignore

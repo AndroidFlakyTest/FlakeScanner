@@ -1,0 +1,6 @@
+.git
+.gitignore
+scripts/build-docker.bash
+scripts/run-docker.bash
+Dockerfile
+template.dockerignore
