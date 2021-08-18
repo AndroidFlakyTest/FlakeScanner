@@ -14,7 +14,32 @@ Requirement
 - `sbt` (ver 1.3.7 tested)
 - `gradle`
 
+Usage
+---
+
 Run command `sbt` to build. Instruction for using `sbt` can be found online.
+
+```
+Usage: FlakeScanner [options] appName testPackage apkPath testRunnerClsPath testClassPath testMethodPath
+
+  --adbPath <value>
+  --debug
+  --disable-ddm-log
+  --apkInstallOpts <value>
+  --deviceName <value>     Use default device if not supplied
+  --max-runs <value>
+  --config-from-file <value>
+  --test-hang-timeout <value>
+  --given-passed <value>
+  --strategy <value>
+  appName
+  testPackage
+  apkPath
+  testRunnerClsPath
+  testClassPath
+  testMethodPath
+```
+
 
 Development Note
 ===
