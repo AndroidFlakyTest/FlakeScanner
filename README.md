@@ -5,19 +5,29 @@ A tool for detecting Android flaky tests. This is considered alpha version, acti
 
 This is an implementation of the paper "Flaky Test Detection in Android via Event Order Exploration" to appear in FSE 2021.
 
-Setup
+Build From Source
 ===
 
-Requirement
+With Docker
 ---
+This is the easiest way to build from source. With `docker` (tested > 18) installed, just do the following with the working directory the root of this project:
+```Bash
+bash scripts/build-docker.bash
+```
+If the build was successful, you should have access to the docker image with tag `ftd:latest`
+
+Without Docker
+---
+
+### Requirement
 - `java` (> 1.8)
 - `sbt` (ver 1.3.7 tested)
 - `gradle`
 
-Usage
----
-
 Run command `sbt` to build. Instruction for using `sbt` can be found online.
+
+Usage
+===
 
 ```
 Usage: FlakeScanner [options] appName testPackage apkPath testRunnerClsPath testClassPath testMethodPath
