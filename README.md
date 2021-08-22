@@ -14,6 +14,8 @@ docker pull ghcr.io/androidflakytest/flakescanner
 docker tag ghcr.io/androidflakytest/flakescanner ftd
 ```
 
+*Note: the container comes with adb at `/usr/bin/adb` that you might want to supply to FlakeScanner via `--adbPath=/usr/bin/adb`*
+
 Build From Source
 ===
 
