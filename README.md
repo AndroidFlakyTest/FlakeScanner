@@ -5,6 +5,15 @@ A tool for detecting Android flaky tests. This is considered alpha version, acti
 
 This is an implementation of the paper "Flaky Test Detection in Android via Event Order Exploration" to appear in FSE 2021.
 
+Installation
+===
+
+We only provide prebuilt binary as a docker image for now. It can be installed via:
+```Bash
+docker pull ghcr.io/androidflakytest/flakescanner
+docker tag ghcr.io/androidflakytest/flakescanner ftd
+```
+
 Build From Source
 ===
 
@@ -29,6 +38,13 @@ Run command `sbt` to build. Instruction for using `sbt` can be found online.
 Usage
 ===
 
+With Docker
+---
+
+Run the docker container via `docker run`. Need to make sure the container can access the device for running the instrumented tests. If you have connected physical device or run an emulator in host, the most convenient way is to use the `--net=host` option to allow container to have access to them. Alternatively, you might simply want to run an emulator in the same container.
+
+Command-Line Arguments
+---
 ```
 Usage: FlakeScanner [options] appName testPackage apkPath testRunnerClsPath testClassPath testMethodPath
 
