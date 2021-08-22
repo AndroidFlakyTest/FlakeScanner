@@ -1,0 +1,7 @@
+AppName,TestPackage,TestRunnerClassPath,TestClassPath,TestMethodName,Status,Reason
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.MainActivityTest,testGoToPreferences,Pass
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.MainActivityTest,testClickNavDrawer,Pass
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.PlaybackTest,testContinuousPlaybackOnMultipleEpisodes,Pass
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.PlaybackSonicTest,testContinousPlaybackOffMultipleEpisodes,Pass
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.PlaybackTest,testContinousPlaybackOffMultipleEpisodes,Pass
+de.danoeh.antennapod,de.test.antennapod,android.support.test.runner.AndroidJUnitRunner,de.test.antennapod.ui.PlaybackTest,testContinuousPlaybackOnMultipleEpisodes,Pass
