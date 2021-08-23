@@ -40,6 +40,8 @@ Run command `sbt` to build. Instruction for using `sbt` can be found online.
 Usage
 ===
 
+**Note: we have tested successfully with Andoird 9 (API level 28)**
+
 With Docker
 ---
 
@@ -68,6 +70,9 @@ Usage: FlakeScanner [options] appName testPackage apkPath testRunnerClsPath test
   testMethodPath
 ```
 
+Assuming you have the `aapt2` tool comes with Android SDK 29 or later.
+- `appName` can be found by `aapt2 dump packagename APP.apk` where `APP.apk` is the APK file contains the APP.
+- `testPackage` can be found by `aapt2 dump packagename TEST.apk` where `TEST.apk` is the APK file contains the test-related files (APK file with name contains `androidTest`).
 
 Development Note
 ===
