@@ -11,6 +11,7 @@ case class Config(
                    testRunnerClsPath: String = null,
                    testClassPath: String = null,
                    testMethodPath: String = null,
+                   testMethodNameInAdb: String = null,
                    adbPath: Path = null,
                    deviceName: String = null,
                    appName: String = null,

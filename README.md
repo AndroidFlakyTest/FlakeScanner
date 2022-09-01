@@ -68,6 +68,21 @@ Usage: FlakeScanner [options] appName testPackage apkPath testRunnerClsPath test
   testRunnerClsPath
   testClassPath
   testMethodPath
+  testMethodNameInAdb
+```
+
+Arguments example:
+
+```shell
+--adbPath ~/aosp-9/out/host/linux-x86/bin/adb \
+--deviceName emulator-5556 \
+de.danoeh.antennapod.debug \
+de.test.antennapod \
+~/apks/AntennaPod-debug.apk \
+androidx.test.runner.AndroidJUnitRunner \
+de.test.antennapod.playback.PlaybackTest \
+testContinousPlaybackOffSingleEpisode \
+testContinousPlaybackOffSingleEpisode[sonic] # method name in adb might not be identical to name used to locate method.
 ```
 
 Assuming you have the `aapt2` tool comes with Android SDK 29 or later.
