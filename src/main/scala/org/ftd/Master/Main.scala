@@ -130,7 +130,8 @@ object Main {
       logger.info("Package installed")
 
       val testRunner = new RemoteAndroidTestRunner(config.testPackage, config.testRunnerClsPath, device)
-      testRunner setMethodName(config.testClassPath, config.testMethodPath)
+      // set adb command
+      testRunner setMethodName(config.testClassPath, config.testMethodNameInAdb)
       testRunner setRunOptions( testRunner.getRunOptions + " --no-window-animation" )
 
       val strategy: Strategy = config.strategy match {

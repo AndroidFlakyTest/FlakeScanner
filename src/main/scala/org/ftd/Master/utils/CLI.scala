@@ -97,6 +97,10 @@ object CLI {
         arg[String]("testMethodPath")
           .required()
           .action((x, c) => c.copy(testMethodPath = x))
+
+        arg[String]("testMethodNameInAdb")
+          .required()
+          .action((x, c) => c.copy(testMethodNameInAdb = x))
     }
 
     parser.parse(args, Config()) match {
